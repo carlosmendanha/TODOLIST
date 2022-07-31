@@ -1,0 +1,118 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    height: 100vh;
+    background:  rgb(117, 117, 117);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .container {
+    border: 2px solid #fff;
+    padding: 30px 40px;
+    width: 40%;
+    min-width: 500px;
+    flex-direction: column;
+  }
+
+.new-task-container {
+    
+        background-color: #fff;
+        padding: 30px 20px;
+        border-radius: 5px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        display: flex;
+      
+}
+
+
+
+.new-task-container input {
+    flex: 3;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    font-weight: 500;
+    padding: 12px;
+  }
+
+  .new-task-container input:focus {
+    border-color:  rgb(142, 145, 146) ;
+    outline: none;
+  }
+
+  .new-task-button {
+    flex: 1;
+    border-radius: 5px;
+    margin-left: 12px;
+    height: 100%;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    background-color:  rgb(117, 117, 117);
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+  }
+
+  .new-task-button:hover {
+
+    background-color: rgb(10, 240, 40);
+  }
+
+  .tasks-container {
+    background-color: #fff;
+    margin-top: 60px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+
+
+
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-top: 6px;
+  }
+  
+  .task-item i {
+    background-color:  rgb(117, 117, 117);
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  
+  .task-item i:hover {
+    cursor: pointer;
+    background-color:red;
+  }
+
+  .error {
+
+    border : 2px solid #f71d00f7 !important;
+    
+  }
+
+
+  .error::placeholder {
+    color: red;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+  }
